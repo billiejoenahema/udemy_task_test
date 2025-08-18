@@ -14,15 +14,15 @@ class UsersTableSeeder extends Seeder
       DB::table('users')->insert([
         [
         'name' => 'ダミー　太郎',
-        'email' => 'dummy@dummy.com',
+        'email' => 'dummy@example.com',
         'password' => Hash::make('password'),
         ],[
         'name' => Str::random(10),
-        'email' => Str::random(10).'@gmail.com',
+        'email' => Str::random(10).'@example.com',
         'password' => Hash::make('password'),
         ],[
         'name' => Str::random(10),
-        'email' => Str::random(10).'@gmail.com',
+        'email' => Str::random(10).'@example.com',
         'password' => Hash::make('password'),
         ],
     ]);
